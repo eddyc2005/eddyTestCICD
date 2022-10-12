@@ -2,9 +2,9 @@ version: 0.2
 phases:
   # Install Runtime and Dependency
   install:
-    runtime-versions:
-        nodejs: 16
     commands:
+      - curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash - &&\
+      - sudo apt-get install -y nodejs
       - echo "======================  codebuild hrmall_admin   ============================="
   # Build
   #pre_build:
