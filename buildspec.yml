@@ -3,8 +3,7 @@ phases:
   # Install Runtime and Dependency
   install:
     commands:
-      - curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash - &&\
-      - sudo apt-get install -y nodejs
+      - curl -fsSL https://rpm.nodesource.com/setup_16.x | sudo bash -
       - echo "======================  codebuild hrmall_admin   ============================="
   # Build
   #pre_build:
