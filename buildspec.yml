@@ -2,8 +2,9 @@ version: 0.2
 phases:
   # Install Runtime and Dependency
   install:
+    runtime-versions:
+        nodejs: 16
     commands:
-      - curl -fsSL https://rpm.nodesource.com/setup_16.x | sudo bash -
       - echo "======================  codebuild hrmall_admin   ============================="
   # Build
   #pre_build:
@@ -18,9 +19,9 @@ phases:
       - echo "project installed..."
       # npm install 的時候, 本機檔案會做成像mount point的樣子, 上傳過程中會被省略
       # 所以這邊用7zip把它變成檔案, 再unzip上傳
-      #- 7za a hrmall_admin.7z ./*
+      #- 7za a eddyTest.7z ./*
       #- echo $(ls)
-      #- 7za x hrmall_admin.7z -o./hrmall_admin
+      #- 7za x eddyTest.7z -o./eddyTest
 
 artifacts:
   files:
