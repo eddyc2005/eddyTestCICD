@@ -5,7 +5,7 @@ phases:
     runtime-versions:
         nodejs: 16
     commands:
-      - echo "======================  codebuild hrmall_admin   ============================="
+      - echo "======================  codebuild eddyTest   ============================="
   # Build
   #pre_build:
   build:
