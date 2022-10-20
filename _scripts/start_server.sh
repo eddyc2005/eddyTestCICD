@@ -1,4 +1,4 @@
 #!/bin/bash
 cd /opt/eddyTestCICD
 
-forever start 
+forever start ./bin/www
